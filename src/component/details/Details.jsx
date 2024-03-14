@@ -49,7 +49,7 @@ function Details() {
           <h2 className="font-bold text-2xl truncate text-[#402218] mt-5  underline">
             Ingredients:
           </h2>
-          <ul className=" list-disc text-[#402218] font-medium flex flex-wrap flex-col h-96">
+          <ul className=" list-disc text-[#402218] font-medium flex flex-wrap flex-col h-[28rem]">
             {recipeDetails?.recipe?.ingredients.map((ingredient) => (
               <li className="m-2 ml-8 text-lg w-80">
                 <span>{ingredient.quantity}</span>
