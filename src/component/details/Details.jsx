@@ -46,14 +46,14 @@ function Details() {
           onClick={() => handleAddFavorite(recipeDetails?.recipe)}>
             {addToFavorite.findIndex((item) => item.id === id) !== -1? "Remove from favorite" : "Add to favorite"}
           </button>
-          <h2 className="font-bold text-2xl truncate text-[#402218] mt-2  underline">
+          <h2 className="font-bold text-2xl truncate text-[#402218] mt-5  underline">
             Ingredients:
           </h2>
-          <ul>
+          <ul className=" list-disc text-[#402218] font-medium flex flex-wrap flex-col h-96">
             {recipeDetails?.recipe?.ingredients.map((ingredient) => (
-              <li className=" m-2 text-lg">
+              <li className="m-2 ml-8 text-lg w-80">
                 <span>{ingredient.quantity}</span>
-                <span className=" px-1">{ingredient.unit}</span>
+               {ingredient.unit && <span className="px-1">{ingredient.unit}</span>}
                 <span>{ingredient.description}</span>
               </li>
             ))}
