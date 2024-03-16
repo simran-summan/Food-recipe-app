@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import RecipeContext from "../../context/RecipeContext";
 import { useParams } from "react-router-dom";
+import StarRating from "../starRating/StarRating"
 
 function Details() {
   const { recipeDetails, setRecipeDetails, handleAddFavorite ,addToFavorite} = useContext(RecipeContext);
@@ -33,6 +34,7 @@ function Details() {
             alt=""
           />
         </div>
+        <StarRating noOfStar= {5}/>
       </div>
       <div>
         <span className="text-sm text-[#402218] font-bold">
