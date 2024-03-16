@@ -19,7 +19,7 @@ function StarRating({noOfStar}) {
   }
 
   return (
-    <div className=' m-12 flex'>
+    <div className=' mt-2 flex'>
       {[...Array(noOfStar)].map((_,index) => {
         index += 1
         return(
@@ -29,7 +29,7 @@ function StarRating({noOfStar}) {
        onClick={()=> {handleClick(index)}}
        onMouseEnter={() => {handleMouseEnter(index)}}
        onMouseLeave={()=> handleMouseLeave()}
-      size={40}
+      size={22}
       /> 
       )
       })}

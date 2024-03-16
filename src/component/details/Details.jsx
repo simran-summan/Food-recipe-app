@@ -27,14 +27,14 @@ function Details() {
   return (
     <div className="container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div className="row-start-2 lg:row-start-auto">
-        <div className="h-96 overflow-hidden rounded-xl group">
+        <div className="h-[30rem] overflow-hidden rounded-xl group">
           <img
             src={recipeDetails?.recipe?.image_url}
-            className="w-full h-full object-cover block group-hover:scale-105 duration-300 mx-8"
+            className="w-full h-full object-cover block group-hover:scale-105 duration-300 mx-8 mt-16"
             alt=""
           />
         </div>
-        <StarRating noOfStar= {5}/>
+        
       </div>
       <div>
         <span className="text-sm text-[#402218] font-bold">
@@ -43,6 +43,7 @@ function Details() {
         <h2 className="font-bold text-4xl truncate text-[#402218]">
           {recipeDetails?.recipe?.title}
         </h2>
+        <StarRating noOfStar= {5}/>
         <div>
           <button className=" text-sm p-2 mt-4 px-6 rounded-lg uppercase font-medium tracking-wider bg-[#865439] inline-block shadow-sm shadow-black  text-[#e9ded9] hover:shadow-black hover:shadow-md duration-100"
           onClick={() => handleAddFavorite(recipeDetails?.recipe)}>
