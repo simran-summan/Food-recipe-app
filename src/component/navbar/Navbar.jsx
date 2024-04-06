@@ -7,7 +7,7 @@ function Navbar() {
   // console.log(search);
   return (
     <div className="flex items-center justify-between px-4 py-5 bg-[#865439] w-full text-[#D7B19D]">
-      <h1 className=" text-2xl  font-medium ml-3">Navbar</h1>
+      <h1 className=" text-2xl  font-medium ml-3">RecipeRoute</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
